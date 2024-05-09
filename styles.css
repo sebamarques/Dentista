@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Jersey 15";
+}
+
+body{
+    background-color: #f2f2f2;
+}
+/*Header*/
+header{
+    display: flex;
+    flex-direction: column;
+}
+nav{
+    background-color: #8fffaf;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    margin-right: 20px;
+}
+nav ul li{
+    margin: 20px 56px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 28px;
+    color: black;
+    transition: all ease 0.4s;
+}
+nav ul li a:hover{
+    color: white;
+}
+.informacion{
+    margin-top: 100px;
+    margin-left: 25%;
+    font-size: 32px;
+    width: 300px;
+    height: auto;
+}
+
+
+
+/*Main*/
+main{
+    display: flex;
+    flex-direction: column;
+    margin-top:100px;
+}
+.productos{
+    display: flex;
+    flex-direction: row;
+}
+.producto{
+    width: 150px;
+    height: 150px;
+    border: solid 1px #8fffaf;
+}
+.producto {
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+    padding: 10px;
+}
+.producto .texto {
+    height: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.producto button {
+    position: absolute;
+    bottom: 10px;
+    left: 46%;
+    width: 80%;
+    transform: translateX(-50%);
+    background-color: #8fffa2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+.producto button:hover{
+    background-color: #8fffaf;
+    color: black;
+}
+.formulario{
+    display: flex;
+    justify-content: center;
+}
+form{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 32px;
+}
+form input{
+    width: 50%;
+    border: none;
+    border-radius: 10px;
+    background-color:#8fffa2;
+    font-size: 32px;
+    margin-bottom: 6px;
+    padding-left: 10px;
+}
+form button{
+    width: 100px;
+    height: 50px;
+    font-size: 24px;
+    background-color: #8fffaf;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all ease 0.4s;
+    color: black;
+    margin: 10px ;
+}
+form button:hover{
+    color: white;
+    background-color: #8fffaf;
+}
+/*Footer*/
+footer{
+    background-color: #8fffaf;
+}
+.footer-columns{
+    width: 100%;
+    height: 150px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.footer-column{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
